@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
-import searchResults from './SearchResults';
 import SearchResults from './SearchResults';
 
 const SearchForm = ({ search, searchResults, loading }) => {
-  
+  const [ firstName, setFirstName] = useState('');
+  const [ lastName, setLastName] = useState('');
+  const [ geoState, setGeoState] = useState('');
+
   return (
     <div>
     <Row>
@@ -16,7 +18,10 @@ const SearchForm = ({ search, searchResults, loading }) => {
           <FormControl
             placeholder="First Name"
             aria-label="First Name"
-            aria-describedby="fist-name-label" 
+            aria-describedby="fist-name-label"
+            value={firstName}
+            onChange={e => setFirstName(e.target.value)}
+            disabled={loading}
           />
         </InputGroup>
       </Col>
@@ -28,7 +33,10 @@ const SearchForm = ({ search, searchResults, loading }) => {
           <FormControl
             placeholder="Last Name"
             aria-label="Last Name"
-            aria-describedby="last-name-label" 
+            aria-describedby="last-name-label"
+            value={lastName}
+            onChange={e => setLastName(e.target.value)}
+            disabled={loading}
           />
         </InputGroup>
       </Col>
@@ -40,14 +48,21 @@ const SearchForm = ({ search, searchResults, loading }) => {
           <FormControl
             placeholder="State"
             aria-label="State"
-            aria-describedby="state-label" 
+            aria-describedby="state-label"
+            value={geoState}
+            onChange={e => setGeoState(e.target.value)}
+            disabled={loading}
           />
         </InputGroup>      
       </Col>
       <Col>
         <Button 
           variant="primary"
-          onClick={() => search('elon', 'musk', 'la')}>Search</Button>
+          onClick={() => search(firstName, lastName, geoState)}
+          disabled={loading}
+        >
+          Search
+        </Button>
       </Col>
     </Row>
     <div className="searchResults">

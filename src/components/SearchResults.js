@@ -3,7 +3,6 @@ import React from 'react';
 const SearchResults = ({ searchResults, loading }) => {
   return (
     <div className='search-results'>
-        
         {loading && <h2>Loading...</h2>}
 
         {searchResults.map(result => {

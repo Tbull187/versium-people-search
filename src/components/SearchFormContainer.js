@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SearchForm from './SearchForm';
-// import SearchService from '../services/SearchService';
 
 export default class SearchFormContainer extends Component {
   constructor(props) {
@@ -13,24 +12,17 @@ export default class SearchFormContainer extends Component {
       searchResults: [],
       loading: false
      }
-
-     this.search = this.search.bind(this);
   }
 
-  componentDidMount() {
-    console.log('SearchFormContainer mounted.');
-    console.log('baseUrl:', this.baseUrl);
-
-    // Testing the search function
-    // this.searchService.search('tristan', 'bull', 'wa').then(data => {
-    //   console.log('data:', data);
-    // })
+  validateSearch() {
+    
   }
 
   async search(firstName, lastName, state) {
     const url = `${this.baseUrl}&d_first=${firstName}&d_last=${lastName}&d_state=${state}`;
 
     this.setState({ loading: true });
+
     try {
       const response = await fetch(this.proxyUrl + url);
       if (response.ok) {
@@ -50,11 +42,10 @@ export default class SearchFormContainer extends Component {
   render() {
     return (
       <SearchForm 
-        search={this.search}
+        search={this.search.bind(this)}
         searchResults={this.state.searchResults}
         loading={this.state.loading}
       />
     )
   }
-
 }

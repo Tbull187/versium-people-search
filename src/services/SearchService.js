@@ -1,10 +1,6 @@
-
-
 export default class SearchService { 
   baseUrl = 'https://api.datafinder.com/qdf.php?service=phone&k2=9abbxna7d2b65ivia3p9vljs&cfg_maxrecs=100';
   proxyurl = 'https://cors-anywhere.herokuapp.com/';
-
-  testUrl = 'https://api.datafinder.com/qdf.php?service=phone&k2=9abbxna7d2b65ivia3p9vljs&cfg_maxrecs=100&d_first=mark&d_last=prentice&d_state=wa';
 
   constructor() {}
 
