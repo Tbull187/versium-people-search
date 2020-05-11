@@ -1,0 +1,556 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm Component renders correctly with default props 1`] = `
+Array [
+  <div
+    className="btn-row row row-cols-lg-4 row-cols-1"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="fist-name-label"
+          >
+            First Name
+          </span>
+        </div>
+        <input
+          aria-describedby="fist-name-label"
+          aria-label="First Name"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="First Name"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="last-name-label"
+          >
+            Last Name
+          </span>
+        </div>
+        <input
+          aria-describedby="last-name-label"
+          aria-label="Last Name"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="Last Name"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="state-label"
+          >
+            State
+          </span>
+        </div>
+        <input
+          aria-describedby="state-label"
+          aria-label="State"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="State"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="col-md-auto"
+    >
+      <button
+        className="btn btn-primary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+  </div>,
+  <div
+    className="search-results"
+  />,
+]
+`;
+
+exports[`SearchForm Component renders validation errors 1`] = `
+Array [
+  <div
+    className="btn-row row row-cols-lg-4 row-cols-1"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="input-error input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="fist-name-label"
+          >
+            First Name
+          </span>
+        </div>
+        <input
+          aria-describedby="fist-name-label"
+          aria-label="First Name"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="First Name"
+          value=""
+        />
+      </div>
+      <div
+        className="error-msg"
+      >
+        First name must exist
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="input-error input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="last-name-label"
+          >
+            Last Name
+          </span>
+        </div>
+        <input
+          aria-describedby="last-name-label"
+          aria-label="Last Name"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="Last Name"
+          value=""
+        />
+      </div>
+      <div
+        className="error-msg"
+      >
+        Last name must exist
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="input-error input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="state-label"
+          >
+            State
+          </span>
+        </div>
+        <input
+          aria-describedby="state-label"
+          aria-label="State"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="State"
+          value=""
+        />
+      </div>
+      <div
+        className="error-msg"
+      >
+        Geographic state must exist
+      </div>
+    </div>
+    <div
+      className="col-md-auto"
+    >
+      <button
+        className="btn btn-primary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+  </div>,
+  <div
+    className="search-results"
+  />,
+]
+`;
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="btn-row row row-cols-lg-4 row-cols-1"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="fist-name-label"
+          >
+            First Name
+          </span>
+        </div>
+        <input
+          aria-describedby="fist-name-label"
+          aria-label="First Name"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="First Name"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="last-name-label"
+          >
+            Last Name
+          </span>
+        </div>
+        <input
+          aria-describedby="last-name-label"
+          aria-label="Last Name"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="Last Name"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="state-label"
+          >
+            State
+          </span>
+        </div>
+        <input
+          aria-describedby="state-label"
+          aria-label="State"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="State"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="col-md-auto"
+    >
+      <button
+        className="btn btn-primary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+  </div>,
+  <div
+    className="search-results"
+  />,
+]
+`;
+
+exports[`renders correctly with default props 1`] = `
+Array [
+  <div
+    className="btn-row row row-cols-lg-4 row-cols-1"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="fist-name-label"
+          >
+            First Name
+          </span>
+        </div>
+        <input
+          aria-describedby="fist-name-label"
+          aria-label="First Name"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="First Name"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="last-name-label"
+          >
+            Last Name
+          </span>
+        </div>
+        <input
+          aria-describedby="last-name-label"
+          aria-label="Last Name"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="Last Name"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="state-label"
+          >
+            State
+          </span>
+        </div>
+        <input
+          aria-describedby="state-label"
+          aria-label="State"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="State"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="col-md-auto"
+    >
+      <button
+        className="btn btn-primary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+  </div>,
+  <div
+    className="search-results"
+  />,
+]
+`;
+
+exports[`renders validation errors 1`] = `
+Array [
+  <div
+    className="btn-row row row-cols-lg-4 row-cols-1"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="input-error input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="fist-name-label"
+          >
+            First Name
+          </span>
+        </div>
+        <input
+          aria-describedby="fist-name-label"
+          aria-label="First Name"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="First Name"
+          value=""
+        />
+      </div>
+      <div
+        className="error-msg"
+      >
+        First name must exist
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="input-error input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="last-name-label"
+          >
+            Last Name
+          </span>
+        </div>
+        <input
+          aria-describedby="last-name-label"
+          aria-label="Last Name"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="Last Name"
+          value=""
+        />
+      </div>
+      <div
+        className="error-msg"
+      >
+        Last name must exist
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="input-error input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+            id="state-label"
+          >
+            State
+          </span>
+        </div>
+        <input
+          aria-describedby="state-label"
+          aria-label="State"
+          className="form-control"
+          disabled={false}
+          onChange={[Function]}
+          placeholder="State"
+          value=""
+        />
+      </div>
+      <div
+        className="error-msg"
+      >
+        Geographic state must exist
+      </div>
+    </div>
+    <div
+      className="col-md-auto"
+    >
+      <button
+        className="btn btn-primary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+  </div>,
+  <div
+    className="search-results"
+  />,
+]
+`;

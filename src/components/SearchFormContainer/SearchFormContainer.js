@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import SearchForm from './SearchForm';
+import SearchForm from '../SearchForm/SearchForm';
 import { get, isEmpty } from 'lodash';
+import { proxyUrl } from '../../utils/utils';
 
 export default class SearchFormContainer extends Component {
   constructor(props) {
     super(props);
     this.baseUrl = 'https://api.datafinder.com/qdf.php?service=phone&k2=9abbxna7d2b65ivia3p9vljs&cfg_maxrecs=100';
-    this.proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
     this.state = {
       searchResults: null,
@@ -54,10 +54,9 @@ export default class SearchFormContainer extends Component {
 
     this.setState({ loading: true, searchResults: null });
     try {
-      const response = await fetch(this.proxyUrl + url);
+      const response = await fetch(proxyUrl + url);
       if (response.ok) {
         response.json().then(data => {
-          console.log(data);
           const searchResults = get(data, 'datafinder.results', []);
           this.setState({ searchResults, loading: false });
         });

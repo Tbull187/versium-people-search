@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
-import SearchResults from './SearchResults';
+import SearchResults from '../SearchResults/SearchResults';
 
 const SearchForm = ({ searchResults, validateSearch, formErrors, loading }) => {
   const [ firstName, setFirstName] = useState('');

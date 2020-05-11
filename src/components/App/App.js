@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import SearchFormContainer from './components/SearchFormContainer';
-import './styles/App.css';
+import SearchFormContainer from '../SearchFormContainer/SearchFormContainer';
+import '../../styles/App.css'
 
 function App() {
   return (

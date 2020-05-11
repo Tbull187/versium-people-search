@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App component 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div
+      className="text-align-center row"
+    >
+      <div
+        className="col"
+      >
+        <h1>
+          Welcome to Versium People Search
+        </h1>
+      </div>
+    </div>
+    <div
+      className="btn-row row row-cols-lg-4 row-cols-1"
+    >
+      <div
+        className="col"
+      >
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group-prepend"
+          >
+            <span
+              className="input-group-text"
+              id="fist-name-label"
+            >
+              First Name
+            </span>
+          </div>
+          <input
+            aria-describedby="fist-name-label"
+            aria-label="First Name"
+            className="form-control"
+            disabled={false}
+            onChange={[Function]}
+            placeholder="First Name"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="col"
+      >
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group-prepend"
+          >
+            <span
+              className="input-group-text"
+              id="last-name-label"
+            >
+              Last Name
+            </span>
+          </div>
+          <input
+            aria-describedby="last-name-label"
+            aria-label="Last Name"
+            className="form-control"
+            disabled={false}
+            onChange={[Function]}
+            placeholder="Last Name"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="col"
+      >
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group-prepend"
+          >
+            <span
+              className="input-group-text"
+              id="state-label"
+            >
+              State
+            </span>
+          </div>
+          <input
+            aria-describedby="state-label"
+            aria-label="State"
+            className="form-control"
+            disabled={false}
+            onChange={[Function]}
+            placeholder="State"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="col-md-auto"
+      >
+        <button
+          className="btn btn-primary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+    <div
+      className="search-results"
+    />
+  </div>
+</div>
+`;

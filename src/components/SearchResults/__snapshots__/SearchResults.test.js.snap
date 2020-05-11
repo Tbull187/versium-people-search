@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResults Component should render results in a list 1`] = `
+<div
+  className="search-results"
+>
+  <div
+    className="result"
+  >
+    <div
+      className="bold"
+    >
+      Result #
+      1
+    </div>
+    <div>
+      First Name: 
+      Jon
+    </div>
+    <div>
+      Last Name: 
+      Smith
+    </div>
+    <div>
+      Address: 
+      123 Street
+    </div>
+    <div>
+      City: 
+      Seattle
+    </div>
+    <div>
+      State: 
+      WA
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SearchResults Component should render search results in a list 1`] = `
+<div
+  className="search-results"
+>
+  <div
+    className="result"
+  >
+    <div
+      className="bold"
+    >
+      Result #
+      1
+    </div>
+    <div>
+      First Name: 
+      Jon
+    </div>
+    <div>
+      Last Name: 
+      Smith
+    </div>
+    <div>
+      Address: 
+      123 Street
+    </div>
+    <div>
+      City: 
+      Seattle
+    </div>
+    <div>
+      State: 
+      WA
+    </div>
+  </div>
+</div>
+`;
