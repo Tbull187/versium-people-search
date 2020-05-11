@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
 import SearchResults from './SearchResults';
 
-const SearchForm = ({ search, searchResults, loading }) => {
+const SearchForm = ({ searchResults, validateSearch, formErrors, loading }) => {
   const [ firstName, setFirstName] = useState('');
   const [ lastName, setLastName] = useState('');
   const [ geoState, setGeoState] = useState('');
 
   return (
-    <div>
-    <Row>
+    <>
+    <Row className="btn-row" xs={1} lg={4}>
       <Col>
-        <InputGroup>
+        <InputGroup className={formErrors.firstName ? "input-error" : ""}>
           <InputGroup.Prepend>
             <InputGroup.Text id="fist-name-label">First Name</InputGroup.Text>
           </InputGroup.Prepend>
@@ -22,11 +22,12 @@ const SearchForm = ({ search, searchResults, loading }) => {
             value={firstName}
             onChange={e => setFirstName(e.target.value)}
             disabled={loading}
-          />
+          />          
         </InputGroup>
+        {formErrors.firstName && <div className="error-msg">First name must exist</div>}
       </Col>
       <Col>
-        <InputGroup>
+        <InputGroup className={formErrors.lastName ? "input-error" : ""}>
           <InputGroup.Prepend>
             <InputGroup.Text id="last-name-label">Last Name</InputGroup.Text>
           </InputGroup.Prepend>
@@ -37,11 +38,12 @@ const SearchForm = ({ search, searchResults, loading }) => {
             value={lastName}
             onChange={e => setLastName(e.target.value)}
             disabled={loading}
-          />
+          />          
         </InputGroup>
+        {formErrors.lastName && <div className="error-msg">Last name must exist</div>}
       </Col>
       <Col>
-      <InputGroup>
+        <InputGroup className={formErrors.state ? "input-error" : ""}>
           <InputGroup.Prepend>
             <InputGroup.Text id="state-label">State</InputGroup.Text>
           </InputGroup.Prepend>
@@ -53,22 +55,21 @@ const SearchForm = ({ search, searchResults, loading }) => {
             onChange={e => setGeoState(e.target.value)}
             disabled={loading}
           />
-        </InputGroup>      
+        </InputGroup>
+        {formErrors.state && <div className="error-msg">Geographic state must exist</div>}
       </Col>
-      <Col>
+      <Col md="auto">
         <Button 
           variant="primary"
-          onClick={() => search(firstName, lastName, geoState)}
+          onClick={() => validateSearch(firstName, lastName, geoState)}
           disabled={loading}
         >
           Search
         </Button>
       </Col>
     </Row>
-    <div className="searchResults">
-      <SearchResults searchResults={searchResults} loading={loading}/>
-    </div>
-    </div>
+    <SearchResults searchResults={searchResults} loading={loading}/>
+    </>
   )
 }
 
