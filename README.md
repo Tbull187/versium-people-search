@@ -1,4 +1,9 @@
+To run the project, clone this repository and run `yarn start`.
+
+You can also view the project hosted on gitHub pages here: https://tbull187.github.io/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
